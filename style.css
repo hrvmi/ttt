@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  text-align: center;
+  margin-top: 50px;
+}
+
+h1 {
+  font-size: 3em;
+  margin-bottom: 20px;
+}
+
+.board {
+  display: flex;
+  flex-wrap: wrap;
+  width: 300px;
+  margin: 0 auto;
+}
+
+.cell {
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
+  box-sizing: border-box;
+  font-size: 64px;
+  text-align: center;
+  line-height: 100px;
+  cursor: pointer;
+}
+
+.cell:hover {
+  background-color: #f0f0f0;
+}
+
+.player1 {
+  color: rgb(67, 125, 207);
+}
+
+.player2 {
+  color: rgb(158, 64, 201);
+}
+
+.winner {
+  background-color: crimson;
+  color: white;
+  z-index: 10;
+  transform: scale(1.2);
+  border:1px solid transparent;
+}
+
+.winner:hover {
+  background-color: crimson;
+}
+
+#winner {
+  margin: 10px 0;
+  font-size: 24px;
+  text-align: center;
+}
+
+#restart {
+  display: block;
+  margin: 10px auto;
+}
